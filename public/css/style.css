@@ -1,0 +1,11 @@
+table{
+border: solid 1px #444;
+}
+table tbody tr td{
+border: 1 px solid #2d2a2a;
+padding: 3px 5px;
+}
+.td{
+    border: 1 px solid #2d2a2a;
+    padding: 3px 5px;
+    }
