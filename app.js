@@ -2,9 +2,10 @@ const flash = require('connect-flash');
 const cookieParser = require('cookie-parser')
 const session = require('express-session')
 const experess =require('express');
+const mongoose=require('mongoose')
 require('dotenv').config()
 // const { query } = require('express-validator');
-
+mongoose.connect('mongodb://127.0.0.1:27017/nodestart').then(() => console.log('Connected!'));
 
 
 const app=experess()
