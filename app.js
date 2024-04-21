@@ -2,11 +2,13 @@ const flash = require('connect-flash');
 const cookieParser = require('cookie-parser')
 const session = require('express-session')
 const experess =require('express');
+// define mongoose to use dataBase
 const mongoose=require('mongoose')
 require('dotenv').config()
 // const { query } = require('express-validator');
 mongoose.connect('mongodb://127.0.0.1:27017/nodestart').then(() => console.log('Connected!'));
 
+/// define Experss as app variable
 
 const app=experess()
 
@@ -46,7 +48,7 @@ app.use((req,res,next)=> {
     next()
 })
 
-app.use('/user',require('./routes/user.js'))
+app.use('/',require('./routes/index'))
 
 // app.use('/users',require('./routes/user.js'))
 
