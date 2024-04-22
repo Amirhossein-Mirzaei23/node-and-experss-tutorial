@@ -1,3 +1,5 @@
+// create conteroller part of mvp
+
 let conteroller=require('./conteroller')
 const UserData = require('../models/user')
 class userConteroller extends conteroller{
