@@ -1,3 +1,5 @@
+// create a fake data
+
 module.exports=[
     {
         id:1,
