@@ -1,4 +1,4 @@
-/// create a fake data
+//// create a fake data
 
 module.exports=[
     {
